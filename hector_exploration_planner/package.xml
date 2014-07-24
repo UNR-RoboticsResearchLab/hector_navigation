@@ -1,0 +1,65 @@
+<package>
+  <name>hector_exploration_planner</name>
+  <version>1.0.0</version>
+  <description>hector_exploration_planner is a planner that can both plan paths to goal points and generate goals to explore unknown environments</description>
+  <maintainer email="test@test.edu">Mark Sollweck</maintainer>
+  <maintainer email="test@test.edu">Stefan Kohlbrecher</maintainer>
+  <maintainer email="test@test.edu">Florian Berz</maintainer>
+
+  <license>BSD</license>
+
+  <url type="website">http://ros.org/wiki/hector_exploration_planner</url>
+  <!-- <url type="bugtracker"></url> -->
+
+  <author>Mark Sollweck</author>
+  <author>Stefan Kohlbrecher</author>
+  <author>Florian Berz</author>
+
+  <!-- Dependencies which this package needs to build itself. -->
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <!-- Dependencies needed to compile this package. -->
+  <build_depend>roscpp</build_depend>
+  <build_depend>rospy</build_depend>
+  <build_depend>dynamic_reconfigure</build_depend>
+  <build_depend>geometry_msgs</build_depend>
+  <build_depend>costmap_2d</build_depend>
+  <build_depend>nav_core</build_depend>
+  <build_depend>pluginlib</build_depend>
+  <build_depend>nav_msgs</build_depend>
+  <build_depend>rosconsole</build_depend>
+  <build_depend>hector_nav_msgs</build_depend>
+  <build_depend>cmake_modules</build_depend>
+
+  <!-- Dependencies needed after this package is compiled. -->
+  <run_depend>roscpp</run_depend>
+  <run_depend>rospy</run_depend>
+  <run_depend>dynamic_reconfigure</run_depend>
+  <run_depend>geometry_msgs</run_depend>
+  <run_depend>costmap_2d</run_depend>
+  <run_depend>nav_core</run_depend>
+  <run_depend>pluginlib</run_depend>
+  <run_depend>nav_msgs</run_depend>
+  <run_depend>rosconsole</run_depend>
+  <run_depend>hector_nav_msgs</run_depend>
+  <run_depend>cmake_modules</run_depend>
+
+  <!-- Dependencies needed only for running tests. -->
+  <!-- <test_depend>roscpp</test_depend> -->
+  <!-- <test_depend>rospy</test_depend> -->
+  <!-- <test_depend>dynamic_reconfigure</test_depend> -->
+  <!-- <test_depend>geometry_msgs</test_depend> -->
+  <!-- <test_depend>costmap_2d</test_depend> -->
+  <!-- <test_depend>nav_core</test_depend> -->
+  <!-- <test_depend>pluginlib</test_depend> -->
+  <!-- <test_depend>nav_msgs</test_depend> -->
+  <!-- <test_depend>rosconsole</test_depend> -->
+  <!-- <test_depend>hector_nav_msgs</test_depend> -->
+  <!-- <test_depend>cmake_modules</test_depend> -->
+
+<export>
+    <nav_core plugin="${prefix}/hector_exploration_base_global_planner_plugin.xml"/>
+    <cpp lflags="-L${prefix}/lib -Wl,-rpath,${prefix}/lib -lhector_exploration_planner" cflags="-I${prefix}/include"/>
+</export>
+
+</package>

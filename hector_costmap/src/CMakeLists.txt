@@ -8,6 +8,6 @@
 #set(ROS_BUILD_TYPE Debug)
 
 find_package(OpenCV REQUIRED)
-
-rosbuild_add_executable(hector_costmap hector_costmap_node.cpp hector_costmap.h hector_costmap.cpp)
+include_directories(${catkin_INCLUDE_DIRS})
+add_executable(hector_costmap hector_costmap_node.cpp hector_costmap.h hector_costmap.cpp)
 target_link_libraries(hector_costmap ${OpenCV_LIBS})

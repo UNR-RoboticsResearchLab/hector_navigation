@@ -1,0 +1,44 @@
+<package>
+  <name>hector_costmap</name>
+  <version>1.0.0</version>
+  <description>hector_costmap provides a 2D occupancy grid map containing all untraversable obstacles.  It fuses 2.5D elevation map (provided by hector_elevation_mapping) with the 2D occupancy grid map (provided by hector_slam) for calculating the 2D costmap</description>
+  <maintainer email="test@test.edu">Thorsten Graber</maintainer>
+
+  <license>BSD</license>
+
+  <url type="website"></url>
+  <!-- <url type="bugtracker"></url> -->
+
+  <author>Thorsten Graber</author>
+
+  <!-- Dependencies which this package needs to build itself. -->
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <!-- Dependencies needed to compile this package. -->
+  <build_depend>geometry_msgs</build_depend>
+  <build_depend>pcl_ros</build_depend>
+  <build_depend>sensor_msgs</build_depend>
+  <build_depend>hector_elevation_msgs</build_depend>
+  <build_depend>cv_bridge</build_depend>
+  <build_depend>hector_map_tools</build_depend>
+  <build_depend>dynamic_reconfigure</build_depend>
+
+  <!-- Dependencies needed after this package is compiled. -->
+  <run_depend>geometry_msgs</run_depend>
+  <run_depend>pcl_ros</run_depend>
+  <run_depend>sensor_msgs</run_depend>
+  <run_depend>hector_elevation_msgs</run_depend>
+  <run_depend>cv_bridge</run_depend>
+  <run_depend>hector_map_tools</run_depend>
+  <run_depend>dynamic_reconfigure</run_depend>
+
+  <!-- Dependencies needed only for running tests. -->
+  <!-- <test_depend>geometry_msgs</test_depend> -->
+  <!-- <test_depend>pcl_ros</test_depend> -->
+  <!-- <test_depend>sensor_msgs</test_depend> -->
+  <!-- <test_depend>hector_elevation_msgs</test_depend> -->
+  <!-- <test_depend>cv_bridge</test_depend> -->
+  <!-- <test_depend>hector_map_tools</test_depend> -->
+  <!-- <test_depend>dynamic_reconfigure</test_depend> -->
+
+</package>

@@ -1,0 +1,51 @@
+<package>
+  <name>hector_elevation_mapping</name>
+  <version>1.0.0</version>
+  <description>hector_elevation_mapping advertises pointclouds and generates a local and/or global 2.5D elevation map</description>
+  <maintainer email="test@test.edu">Thorsten Graber</maintainer>
+
+  <license>BSD</license>
+
+  <url type="website"></url>
+  <!-- <url type="bugtracker"></url> -->
+
+  <author>Thorsten Graber</author>
+
+  <!-- Dependencies which this package needs to build itself. -->
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <!-- Dependencies needed to compile this package. -->
+  <build_depend>geometry_msgs</build_depend>
+  <build_depend>pcl_ros</build_depend>
+  <build_depend>sensor_msgs</build_depend>
+  <build_depend>hector_elevation_msgs</build_depend>
+  <build_depend>tf</build_depend>
+  <build_depend>hector_map_tools</build_depend>
+  <build_depend>roscpp</build_depend>
+  <build_depend>nodelet</build_depend>
+
+  <!-- Dependencies needed after this package is compiled. -->
+  <run_depend>geometry_msgs</run_depend>
+  <run_depend>pcl_ros</run_depend>
+  <run_depend>sensor_msgs</run_depend>
+  <run_depend>hector_elevation_msgs</run_depend>
+  <run_depend>tf</run_depend>
+  <run_depend>hector_map_tools</run_depend>
+  <run_depend>roscpp</run_depend>
+  <run_depend>nodelet</run_depend>
+
+  <!-- Dependencies needed only for running tests. -->
+  <!-- <test_depend>geometry_msgs</test_depend> -->
+  <!-- <test_depend>pcl_ros</test_depend> -->
+  <!-- <test_depend>sensor_msgs</test_depend> -->
+  <!-- <test_depend>hector_elevation_msgs</test_depend> -->
+  <!-- <test_depend>tf</test_depend> -->
+  <!-- <test_depend>hector_map_tools</test_depend> -->
+  <!-- <test_depend>roscpp</test_depend> -->
+  <!-- <test_depend>nodelet</test_depend> -->
+
+<export>
+    <nodelet plugin="${prefix}/nodelet_plugins.xml"/>
+</export>
+
+</package>

@@ -1,0 +1,41 @@
+<package>
+  <name>hector_navigation</name>
+  <version>1.0.0</version>
+  <description>hector_navigation provides packages related to navigation of unmanned vehicles in USAR environments</description>
+  <maintainer email="test@test.edu">Stefan Kohlbrecher</maintainer>
+  <maintainer email="test@test.edu">Thorsten Graber</maintainer>
+
+  <license>BSD</license>
+
+  <url type="website">http://ros.org/wiki/hector_navigation</url>
+  <!-- <url type="bugtracker"></url> -->
+
+  <author>Stefan Kohlbrecher</author>
+  <author>Thorsten Graber</author>
+
+  <!-- Dependencies which this package needs to build itself. -->
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <!-- Dependencies needed to compile this package. -->
+
+
+  <!-- Dependencies needed after this package is compiled. -->
+  <run_depend>hector_driving_aid_markers</run_depend>
+  <run_depend>hector_path_follower</run_depend>
+  <run_depend>hector_elevation_visualization</run_depend>
+  <run_depend>hector_exploration_planner</run_depend>
+  <run_depend>hector_elevation_msgs</run_depend>
+  <run_depend>hector_exploration_node</run_depend>
+  <run_depend>hector_costmap</run_depend>
+  <run_depend>hector_exploration_controller</run_depend>
+  <run_depend>hector_elevation_mapping</run_depend>
+
+  <!-- Dependencies needed only for running tests. -->
+
+
+
+
+
+
+
+</package>

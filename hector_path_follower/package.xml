@@ -1,0 +1,38 @@
+<package>
+  <name>hector_path_follower</name>
+  <version>1.0.0</version>
+  <description>hector_path_follower provides a node that publishes Twist messages, following a path. Based on the pose_follower package</description>
+  <maintainer email="test@test.edu">Stefan Kohlbrecher</maintainer>
+
+  <license>BSD</license>
+
+  <url type="website">http://ros.org/wiki/hector_path_follower</url>
+  <!-- <url type="bugtracker"></url> -->
+
+  <author>Stefan Kohlbrecher</author>
+
+  <!-- Dependencies which this package needs to build itself. -->
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <!-- Dependencies needed to compile this package. -->
+  <build_depend>roscpp</build_depend>
+  <build_depend>nav_msgs</build_depend>
+  <build_depend>tf</build_depend>
+  <build_depend>hector_elevation_msgs</build_depend>
+
+  <!-- Dependencies needed after this package is compiled. -->
+  <run_depend>roscpp</run_depend>
+  <run_depend>nav_msgs</run_depend>
+  <run_depend>hector_elevation_msgs</run_depend>
+  <run_depend>tf</run_depend>
+
+  <!-- Dependencies needed only for running tests. -->
+  <!-- <test_depend>roscpp</test_depend> -->
+  <!-- <test_depend>nav_msgs</test_depend> -->
+  <!-- <test_depend>tf</test_depend> -->
+
+<export>
+    <!--<cpp lflags="-L${prefix}/lib -Wl,-rpath,${prefix}/lib -lhector_path_follower" cflags="-I${prefix}/include"/>-->
+</export>
+
+</package>

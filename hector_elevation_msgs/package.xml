@@ -1,0 +1,33 @@
+<package>
+  <name>hector_elevation_msgs</name>
+  <version>1.0.0</version>
+  <description>elevation_msgs contains messages for hector_elevation_mapping and hector_elevation_visualization packages</description>
+  <maintainer email="test@test.edu">Thorsten Graber</maintainer>
+
+  <license>BSD</license>
+
+  <url type="website"></url>
+  <!-- <url type="bugtracker"></url> -->
+
+  <author>Thorsten Graber</author>
+
+  <!-- Dependencies which this package needs to build itself. -->
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <!-- Dependencies needed to compile this package. -->
+  <build_depend>std_msgs</build_depend>
+  <build_depend>geometry_msgs</build_depend>
+  <build_depend>nav_msgs</build_depend>
+  <build_depend>message_generation</build_depend>
+
+  <!-- Dependencies needed after this package is compiled. -->
+  <run_depend>std_msgs</run_depend>
+  <run_depend>geometry_msgs</run_depend>
+  <run_depend>nav_msgs</run_depend>
+  <run_depend>message_runtime</run_depend>
+  <!-- Dependencies needed only for running tests. -->
+  <!-- <test_depend>std_msgs</test_depend> -->
+  <!-- <test_depend>geometry_msgs</test_depend> -->
+  <!-- <test_depend>nav_msgs</test_depend> -->
+
+</package>
